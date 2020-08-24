@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer {
+      position: relative;
+      margin: 200px auto;
+      width: fit-content;
+      height: 169px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 8px 2px rgba(0, 0, 0, .2);
+    }
+
+    span {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 10px;
+      left: 10px;
+      line-height: 25px;
+      text-align: center;
+      color: #2525ef;
+      border-radius: 50%;
+      background-color: lightblue;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+      z-index: 20;
+    }
+
+    .img-wrap {
+      position: relative;
+      width: 300px;
+      height: 100%;
+      overflow: hidden;
+      z-index: 10;
+      /* border: 1px solid #000; */
+    }
+
+    .img-wrap img {
+      position: absolute;
+      width: 100%;
+    }
+
+    .outer:hover .content {
+      z-index: 30;
+      cursor: pointer;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 8em;
+      /* z-index: 30; */
+      background-color: lightblue;
+      opacity: .6;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <span>热</span>
+    <div class="img-wrap">
+      <img src="https://rails365.oss-cn-shenzhen.aliyuncs.com/uploads/playlist/image/73/2020/5d7cf9f33fc47daef328c2af23ddae5b.jpg" alt="pic">
+    </div>
+    <div class="content">
+      <h2>Flutter</h2>
+    </div>
+  </div>
+</body>
+</html>

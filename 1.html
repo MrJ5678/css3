@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer {
+      position: relative;
+      margin: 200px auto;
+      width: fit-content;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 8px 2px rgba(0, 0, 0, .2);
+    }
+
+    .img-wrap {
+      width: 300px;
+      overflow: hidden;
+      /* border: 1px solid #000; */
+    }
+
+    span {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 10px;
+      left: 10px;
+      line-height: 25px;
+      text-align: center;
+      color: #2525ef;
+      border-radius: 50%;
+      background-color: lightblue;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+    }
+
+    .img-wrap img {
+      float: left;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <span>热</span>
+    <div class="img-wrap">
+      <img src="https://rails365.oss-cn-shenzhen.aliyuncs.com/uploads/playlist/image/73/2020/5d7cf9f33fc47daef328c2af23ddae5b.jpg" alt="pic">
+    </div>
+  </div>
+</body>
+</html>

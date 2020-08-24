@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    main {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      margin: 200px auto;
+      width: 500px;
+      height: 400px;
+      border: 1px solid #ddd;
+    }
+
+    main section {
+      flex: 0 0 100px;
+      /* width: 100px; */
+      height: 100px;
+      padding: 10px;
+      text-align: center;
+      background-color: orange;
+      background-clip: content-box;
+      border: 1px solid orange;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* main section:nth-child(1) {
+      order: 1;
+    } */
+
+    section div {
+      flex: 1;
+      /* line-height: 2em; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    section span {
+      padding: 10px;
+      background-color: green;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <div>内容1</div>
+      <span onclick="up(this)">up</span>
+    </section>
+    <section>
+      <div>内容2</div>
+      <span onclick="up(this)">up</span>
+    </section>
+    <section>
+      <div>内容3</div>
+      <span onclick="up(this)">up</span>
+    </section>
+  </main>
+
+  <script>
+    function up(e) {
+      // let order = getComputedStyle(e.parentElement, null).order
+      console.log(e.parentElement.style.order)
+      // e.parentElement.style.order = order * 1 - 1
+    }
+  </script>
+</body>
+</html>

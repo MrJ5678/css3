@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul { list-style: none; }
+
+    .nav-wrap {
+      height: 60px;
+      width: 100vw;
+      background-color: orange;
+    }
+
+    .nav-wrap nav {
+      margin: 0 auto;
+      padding: 0 50px 0 80px;
+      width: 1200px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: green;
+      box-sizing: border-box;
+    }
+
+    .nav-wrap nav ul {
+      display: flex;
+      height: 100%;
+    }
+
+    .nav-wrap nav ul li {
+      display: flex;
+      width: 80px;
+      margin-right: 10px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .nav-wrap nav ul li:hover {
+      background-color: lightblue;
+    }
+
+    .nav-wrap .btn-group button {
+      border: none;
+      height: 30px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .nav-wrap .btn-group :first-child {
+      width: 50px;
+      background-color: lightblue;
+      margin-right: 5px;
+      
+    }
+
+    .nav-wrap .btn-group :last-child {
+      width: 80px;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav>
+      <ul>
+        <li>导航1</li>
+        <li>导航2</li>
+        <li>导航3</li>
+      </ul>
+  
+      <div class="btn-group">
+        <button>login</button>
+        <button>signup</button>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    main {
+      margin: 200px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 400px;
+      border: 1px solid #000;
+    }
+
+    .field {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .field input {
+      width: 200px;
+      height: 30px;
+      padding: 10px;
+      background-color: #ddd;
+      border: none;
+      outline: none;
+    }
+
+    main .field:nth-child(2) {
+      margin-top: 10px;
+    }
+
+    .field:hover::before {
+      transform: translateX(100%);
+    }
+
+    .field::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-image: linear-gradient(to right, white, red, blue, white);
+      transform: translateX(-100%);
+      transition: 2s;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="field">
+      <input type="text" placeholder="please input your username">
+    </div>
+    <div class="field">
+      <input type="text" placeholder="please input your password">
+    </div>
+  </main>
+</body>
+</html>

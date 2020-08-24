@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul { list-style: none; }
+
+    nav {
+      display: flex;
+      margin: 0 auto;
+      padding-right: 50px;
+      width: 1200px;
+      height: 60px;
+      background-color: green;
+      box-sizing: border-box;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul:nth-child(1) {
+      margin-right: auto;
+    }
+
+    nav ul:nth-child(1) > li {
+      margin: 0 10px;
+    }
+
+    nav ul:nth-child(2) > li {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #9b59b6;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>导航1</li>
+      <li>导航2</li>
+      <li>导航3</li>
+    </ul>
+
+    <ul>
+      <li></li>
+    </ul>
+  </nav>
+</body>
+</html>

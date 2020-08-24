@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    article {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: 200px auto;
+      width: 200px;
+      height: 400px;
+      padding: 10px;
+      border: 1px solid #000;
+    }
+
+    article div {
+      flex: 1;
+      padding: 10px;
+      background-clip: content-box;
+      background-color: orange;
+    }
+
+    article div:nth-child(1) {
+      position: relative;
+      
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </article>
+</body>
+</html>

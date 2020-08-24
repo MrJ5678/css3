@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    article {
+      position: relative;
+      margin: 200px auto;
+      width: 150px;
+      cursor: pointer;
+    }
+
+    article div {
+      height: 50px;
+      padding: 10px;
+      text-align: center;
+      color: #555;
+      line-height: 3em;
+      border: 1px solid #ddd;
+    }
+
+    article:hover div:nth-of-type(1) {
+      border-bottom: none;
+    }
+
+    article:hover div:nth-of-type(2) {
+      display: block;
+    }
+
+    article div:nth-of-type(1) {
+      background-color: #fff;
+      position: relative;
+      z-index: 20;
+    }
+
+    article div:nth-of-type(2) {
+      display: none;
+      position: absolute;
+      width: 300px;
+      right: 0;
+      top: 70px;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <div>我的购物车</div>
+    <div>暂无商品</div>
+  </article>
+</body>
+</html>

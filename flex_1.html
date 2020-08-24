@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body main {
+      flex: 1;
+      background-color: orange;
+    }
+
+    footer {
+      height: 60px;
+      display: flex;
+      justify-content: space-evenly;
+    }    
+
+    footer div {
+      flex: 1;
+      font-size: 18px;
+      text-align: center;
+      line-height: 3em;
+      cursor: pointer;
+    }
+
+    footer div:nth-child(n+2) {
+      border-left: 1px solid #000;
+    }
+
+  </style>
+</head>
+<body>
+  <main>main</main>
+  <footer>
+    <div>导航1</div>
+    <div>导航2</div>
+    <div>导航3</div>
+  </footer>
+</body>
+</html>
